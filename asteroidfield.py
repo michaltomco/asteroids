@@ -1,28 +1,37 @@
-import pygame
 import random
-from asteroid import Asteroid
+
+import pygame
+
 import constants
+from asteroid import Asteroid
+
 
 class AsteroidField(pygame.sprite.Sprite):
     edges = [
         [
             pygame.Vector2(1, 0),
-            lambda y: pygame.Vector2(-constants.ASTEROID_MAX_RADIUS, y * constants.SCREEN_HEIGHT),
+            lambda y: pygame.Vector2(
+                -constants.ASTEROID_MAX_RADIUS, y * constants.SCREEN_HEIGHT
+            ),
         ],
         [
             pygame.Vector2(-1, 0),
             lambda y: pygame.Vector2(
-                constants.SCREEN_WIDTH + constants.ASTEROID_MAX_RADIUS, y * constants.SCREEN_HEIGHT
+                constants.SCREEN_WIDTH + constants.ASTEROID_MAX_RADIUS,
+                y * constants.SCREEN_HEIGHT,
             ),
         ],
         [
             pygame.Vector2(0, 1),
-            lambda x: pygame.Vector2(x * constants.SCREEN_WIDTH, -constants.ASTEROID_MAX_RADIUS),
+            lambda x: pygame.Vector2(
+                x * constants.SCREEN_WIDTH, -constants.ASTEROID_MAX_RADIUS
+            ),
         ],
         [
             pygame.Vector2(0, -1),
             lambda x: pygame.Vector2(
-                x * constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT + constants.ASTEROID_MAX_RADIUS
+                x * constants.SCREEN_WIDTH,
+                constants.SCREEN_HEIGHT + constants.ASTEROID_MAX_RADIUS,
             ),
         ],
     ]
