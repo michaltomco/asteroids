@@ -1,7 +1,7 @@
-<p align="center">
-  <img src="https://api.boot.dev/v1/users/public/52eec9c0-07f8-44d7-a4cd-6aa05541bc6e/thumbnail" >
-</p>
-
 # Asteroids
 
 Asteroids is a Python and Pygame arcade project that recreates the classic asteroid-dodging and shooting game.
+
+<p align="center">
+  <img src="https://api.boot.dev/v1/users/public/52eec9c0-07f8-44d7-a4cd-6aa05541bc6e/thumbnail" >
+</p>
